@@ -1,6 +1,7 @@
 var configVars = {
-    	apiKey: "AIzaSyDK2fYgFNoR9PjWtH_Za1jk2mLDFqpAFcc",
-    	authDomain: "querynow-86d31.firebaseapp.com",
-    	databaseURL: "https://querynow-86d31.firebaseio.com",
-    	storageBucket: "querynow-86d31.appspot.com",
+    apiKey: "AIzaSyClXhEJbHDeQryyTpSl0cJ6AxWpDidtf3g",
+    authDomain: "barnet-6749d.firebaseapp.com",
+    databaseURL: "https://barnet-6749d.firebaseio.com",
+    storageBucket: "barnet-6749d.appspot.com",
+    messagingSenderId: "60396479597"
 };
