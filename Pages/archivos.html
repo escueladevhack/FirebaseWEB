@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>Registro - Query Now</title>
+	<title>Preguntas - Query Now</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-	<link rel="stylesheet" href="../CSS/registro.css">
+	<link rel="stylesheet" href="../CSS/archivos.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
 	<script src="../JS/config.js"></script>
-	<script src="../JS/registro.js"></script>
+	<script src="../JS/archivos.js"></script>
 </head>
 <body>
 	<header>
@@ -17,19 +17,14 @@
 			<img src="../imgs/gdgcali.png" alt="">
 		</div>
 		<div class="header-titulo">
-			<h1>Registro</h1>
+			<h1>Subir archivos</h1>
 		</div>
 	</header>	
 	<section class="login">
 		<div class="login-panel">			
 			<div class="login-panel-ingreso">
-				<input type="email" placeholder="E-mail" id="txtEmailLogin" name="E-mail" required />
-				<input type="password" placeholder="Password" id="txtPasswordLogin" name="Password" required />
-				<div class="login-panel-ingreso-botones">
-					<input
-					 type="submit" value="Crear Cuenta" id="btnCrearCuenta" />					
-				</div>
-				<a href="../index.html" id="linkIngresar">Ingresar</a>				
+				<progress value="0" max="100" id="uploader">0%</progress>
+				<input type="file" value="upload" id="btnUploadFile" />			
 			</div>			
 		</div>		
 	</section>

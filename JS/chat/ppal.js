@@ -34,10 +34,13 @@ $(function(){
 
         var database = firebase.database();
 
+        var f = new Date();
+
         database.ref('questions').push({
           autor:nombre,
-          mensaje:mensaje,
-          imagen:sessionStorage.getItem('profileImageURL')
+          pregunta:mensaje,
+          imagen:sessionStorage.getItem('profileImageURL'),
+          fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
         });
 	}
 
@@ -47,7 +50,7 @@ $(function(){
     var values = data.val();
     var estilo = "";
     if(values.autor === $("#txtNombre").val()){ estilo = 'me'}
-    $(".cont-mensaje-timeline").prepend(getTemplate(values.autor, values.mensaje, estilo, values.imagen));
+    $(".cont-mensaje-timeline").prepend(getTemplate(values.autor, values.pregunta, estilo, values.imagen));
 
   });
 

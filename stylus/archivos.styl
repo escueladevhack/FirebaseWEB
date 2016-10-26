@@ -1,0 +1,76 @@
+azulOscuro = #0B0b61
+grisFondo = #E8E8E8
+grisOscuro = #6E6E6E
+tamanoLetra = 16px
+naranja = #DD4F24
+azul = #22BCE0
+
+body
+	background grisFondo
+	font-family Arial
+	font-size tamanoLetra	
+	
+	header
+		background azulOscuro
+		box-shadow 0 5px 0 rgba(0,0,0,0.2)
+		color white
+		height 100px
+		
+		.header-logo			
+			float left					
+			padding 0.5em
+			width 100px		
+			
+			img
+				border-radius 1em
+				border-right 2px solid white				
+				padding 0.8em
+				width 60px
+		
+	.login
+		height 350px
+		
+		.login-panel
+			background naranja
+			border-radius 20px
+			height 330px
+			margin 30px auto
+			width 400px
+			text-align center				
+									
+			.login-panel-ingreso
+				
+				progress
+					background-color: #f3f3f3
+					border 0
+					border-radius 9px
+					padding 0.2em 0
+					margin 4em 0 1em 0
+					width 80%
+					height 1em
+					
+					
+				input
+					background azul
+					display block
+					color white
+					font-weight normal
+					padding 0.2em 1em
+					margin 1em 0 2em 0								
+					text-align center
+
+	footer
+		background naranja
+		color white
+		text-align center
+		padding 0.8em 0
+		
+		h3
+			font-size 14px
+			font-weight normal
+			
+			&:after
+				content " --"
+				
+			&:before
+				content "-- "		
